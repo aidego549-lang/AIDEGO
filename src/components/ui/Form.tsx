@@ -36,12 +36,13 @@ interface CheckboxProps {
   label: string;
   id: string;
   name?: string;
+  className?: string;
   checked?: boolean;
   onChange?: (checked: boolean) => void;
 }
 
-export const Checkbox = ({ label, id, name, checked, onChange }: CheckboxProps) => (
-  <div className="flex items-center gap-3 mb-3 cursor-pointer group">
+export const Checkbox = ({ label, id, name, className = "", checked, onChange }: CheckboxProps) => (
+  <div className={`flex items-center gap-3 mb-3 cursor-pointer group ${className}`}>
     <div className="relative flex items-center">
       <input
         type="checkbox"
