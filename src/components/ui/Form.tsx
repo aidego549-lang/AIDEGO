@@ -35,16 +35,18 @@ export const Textarea = ({ label, className = "", ...props }: TextareaProps) => 
 interface CheckboxProps {
   label: string;
   id: string;
+  name?: string;
   checked?: boolean;
   onChange?: (checked: boolean) => void;
 }
 
-export const Checkbox = ({ label, id, checked, onChange }: CheckboxProps) => (
+export const Checkbox = ({ label, id, name, checked, onChange }: CheckboxProps) => (
   <div className="flex items-center gap-3 mb-3 cursor-pointer group">
     <div className="relative flex items-center">
       <input
         type="checkbox"
         id={id}
+        name={name}
         className="peer sr-only"
         checked={checked}
         onChange={(e) => onChange?.(e.target.checked)}

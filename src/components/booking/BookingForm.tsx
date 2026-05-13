@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { Input, Checkbox, SegmentedToggle } from "@/components/ui/Form";
@@ -78,7 +78,7 @@ const BookingForm = ({ isSidebar = false }: BookingFormProps) => {
     setDestination(e.target.value);
   };
 
-  const revealVariants = {
+  const revealVariants: Variants = {
     hidden: { height: 0, opacity: 0, marginTop: 0, marginBottom: 0, overflow: "hidden" },
     visible: { 
       height: "auto", 
