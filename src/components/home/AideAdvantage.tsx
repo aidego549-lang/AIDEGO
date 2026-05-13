@@ -30,8 +30,13 @@ const AideAdvantage = () => {
             <div className="flex flex-col items-center gap-4">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-surface overflow-hidden shadow-sm">
-                    <img src={`https://i.pravatar.cc/100?u=${i + 30}`} alt="User" className="w-full h-full object-cover" />
+                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-surface overflow-hidden shadow-sm relative">
+                    <Image 
+                      src={`https://i.pravatar.cc/100?u=${i + 30}`} 
+                      alt="User" 
+                      fill
+                      className="object-cover" 
+                    />
                   </div>
                 ))}
               </div>

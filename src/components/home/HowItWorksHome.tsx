@@ -48,7 +48,7 @@ const HowItWorksHome = () => {
               <span className="text-primary italic">safe transportation.</span>
             </h2>
             <p className="text-lg md:text-xl text-text-muted leading-relaxed">
-              We've streamlined the booking process to ensure you get the care and assistance you deserve without any stress.
+              We&apos;ve streamlined the booking process to ensure you get the care and assistance you deserve without any stress.
             </p>
           </div>
           

@@ -2,7 +2,6 @@
 
 import React from "react";
 import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
 import BookingForm from "@/components/booking/BookingForm";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 

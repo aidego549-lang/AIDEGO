@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container, Section } from "@/components/ui/Layout";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { Input, Textarea } from "@/components/ui/Form";
 import { motion } from "framer-motion";

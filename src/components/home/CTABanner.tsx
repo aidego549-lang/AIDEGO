@@ -79,8 +79,13 @@ const CTABanner = () => {
                 <div className="flex items-center gap-4 pt-4 border-t border-border/40">
                    <div className="flex -space-x-2">
                       {[1, 2, 3].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full border-2 border-surface bg-surface overflow-hidden">
-                           <img src={`https://i.pravatar.cc/100?u=${i + 50}`} alt="User" />
+                        <div key={i} className="w-8 h-8 rounded-full border-2 border-surface bg-surface overflow-hidden relative">
+                           <Image 
+                             src={`https://i.pravatar.cc/100?u=${i + 50}`} 
+                             alt="User" 
+                             fill
+                             className="object-cover"
+                           />
                         </div>
                       ))}
                    </div>

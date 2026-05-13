@@ -85,7 +85,7 @@ export default function HowItWorksPage() {
                 Simplicity in every <span className="text-primary italic">step.</span>
               </h1>
               <p className="fade-in text-lg md:text-xl text-white max-w-2xl mx-auto mb-16 leading-relaxed font-medium">
-                Whether you're arranging a ride for a loved one or joining our team as a caregiver, we make the process simple and easy.
+                Whether you&apos;re arranging a ride for a loved one or joining our team as a caregiver, we make the process simple and easy.
               </p>
             </ScrollReveal>
 
@@ -199,7 +199,7 @@ export default function HowItWorksPage() {
                       Got questions? <br /> <span className="text-primary italic">We have answers.</span>
                     </h2>
                     <p className="text-lg text-text-muted leading-relaxed font-normal mb-12 max-w-sm">
-                      Everything you need to know about the AideGo platform. Can't find what you're looking for?
+                      Everything you need to know about the AideGo platform. Can&apos;t find what you&apos;re looking for?
                     </p>
 
                     <div className="space-y-4">

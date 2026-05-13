@@ -5,9 +5,10 @@ import React, { useEffect, useRef, useState } from "react";
 interface ScrollRevealProps {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
 }
 
-const ScrollReveal = ({ children, className = "" }: ScrollRevealProps) => {
+const ScrollReveal = ({ children, className = "", delay = 0 }: ScrollRevealProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
 
@@ -37,6 +38,7 @@ const ScrollReveal = ({ children, className = "" }: ScrollRevealProps) => {
     <div
       ref={domRef}
       className={`scroll-reveal ${isVisible ? "visible" : ""} ${className}`}
+      style={{ transitionDelay: `${delay}s` }}
     >
       {children}
     </div>

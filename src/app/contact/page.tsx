@@ -7,7 +7,7 @@ import { Container, Section } from "@/components/ui/Layout";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { Input, Textarea } from "@/components/ui/Form";
 import Button from "@/components/ui/Button";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function ContactPage() {
   const [result, setResult] = useState<string | null>(null);

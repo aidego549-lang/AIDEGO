@@ -52,7 +52,7 @@ const MapUpdater = ({ center }: { center: [number, number] }) => {
 
 const InteractiveMap = () => {
   const [mounted, setMounted] = useState(false);
-  const [center, setCenter] = useState<[number, number]>([6.5244, 3.3792]); // Lagos, Nigeria
+  const [center] = useState<[number, number]>([6.5244, 3.3792]); // Lagos, Nigeria
 
   useEffect(() => {
     setMounted(true);

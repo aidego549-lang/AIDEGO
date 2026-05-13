@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Container, Section } from "@/components/ui/Layout";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -63,11 +64,12 @@ const Testimonials = () => {
                 </div>
 
                 <div className="pt-8 border-t border-border/40 flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
-                    <img 
+                  <div className="w-12 h-12 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 relative">
+                    <Image 
                       src={review.avatar} 
                       alt={review.name} 
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <div>
