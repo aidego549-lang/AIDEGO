@@ -85,7 +85,7 @@ const BookingForm = ({ isSidebar = false }: BookingFormProps) => {
       opacity: 1, 
       marginTop: isSidebar ? 16 : 24, 
       marginBottom: isSidebar ? 16 : 24,
-      transition: { duration: 0.4, ease: [0.23, 1, 0.32, 1] } 
+      transition: { duration: 0.4, ease: "circOut" } 
     },
   };
 
